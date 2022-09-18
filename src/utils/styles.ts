@@ -83,7 +83,7 @@ export function toPropValue<T>(
     return result.join("\n");
   }
 
-  //theme以外できたとき
+  //responsiveのオブジェクト以外できた時の対応
   return `${propKey}: ${toThemeValueIfNeeded(propKey, prop, theme)};`;
 }
 
